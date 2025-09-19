@@ -10,7 +10,7 @@ Input is nanopore pod5 files. Output is basecalled fastq files.
 <details>
 <summary><b>HPC</b></summary>
 
-1. open terminal
+1. open your terminal
 
 2. login to [username]@hpclogin.fiu.edu
 
@@ -19,6 +19,16 @@ Input is nanopore pod5 files. Output is basecalled fastq files.
 4. move the data to this directory if it isn't already there. If you type `ls -lath ./pod5/*.pod5` then you should see a list of files.
 
 5. Download dorado
+
+please navigate to https://github.com/nanoporetech/dorado/ to ensure that you are downloading the most uptodate version.
+
+`wget https://cdn.oxfordnanoportal.com/software/analysis/dorado-1.1.1-linux-x64.tar.gz`
+
+`gunzip dorado-1.1.1-linux-x64.tar.gz`
+
+`tar -xvf dorado-1.1.1-linux-x64.tar`
+
+`rm dorado-1.1.1-linux-x64.tar`
 
 6. Make and submit your script.
 
