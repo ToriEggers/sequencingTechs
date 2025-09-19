@@ -9,6 +9,47 @@ Input is nanopore pod5 files. Output is basecalled fastq files.
 
 <details>
 <summary><b>HPC</b></summary>
+
+1. open terminal
+
+2. login to [username]@hpclogin.fiu.edu
+
+3. cd to your working directory
+
+4. move the data to this directory if it isn't already there. If you type `ls -lath ./pod5/*.pod5` then you should see a list of files.
+
+5. Download dorado
+
+6. Make and submit your script.
+
+```
+vi dorado.sh
+```
+
+Hit [i] for insert and then copy/paste the following:
+
+```
+#!/bin/bash
+
+#SBATCH --account acc_jfierst
+#SBATCH --partition gpu-a100-zen2
+#SBATCH --qos gpu1
+#SBATCH --gres=gpu:1
+#SBATCH --job-name=basecalling
+#SBATCH --output=basecalling_log.%x.job_%j
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=[username]@fiu.edu
+
+module load proxy
+
+./dorado-1.1.1-linux-x64/bin/dorado basecaller hac pod5/ > [sample].bam
+```
+
+Hit [esc] and type `:wq` and then hit [enter] 
+
+To check if your job is running, type `squeue --me`
+
+You should also get emails when your job starts and finishes.
   
 </details>
 
