@@ -30,7 +30,7 @@ please navigate to https://github.com/nanoporetech/dorado/ to ensure that you ar
 
 `rm dorado-1.1.1-linux-x64.tar`
 
-<b>6. Make and submit your script for basecalling</b>
+<b>6. Basecalling</b>
 
 ```
 vi dorado.sh
@@ -68,7 +68,7 @@ You should also get emails when your job starts and finishes.
 
 Note that the output is a bam file. Bam files are a bit more difficult to understand and some programs may not take them. If you need fastq file output proceed with the next step.
 
-<b>7. Make and submit your script if you need fastq instead of a bam</b>
+<b>7. Samtools convert bam to fastq (if needed)</b>
 
 Please note that I have not actually run this script on the HPC and so you may get errors, but theoretically it works.
 
