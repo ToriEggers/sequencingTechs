@@ -16,7 +16,7 @@ Input is nanopore pod5 files. Output is basecalled fastq files.
 
 <b>3. cd to your working directory</b>
 
-<b>4. move the data to this directory if it isn't already there. If you type `ls -lath ./pod5/*.pod5` then you should see a list of files</b>
+<b>4. move the data to this directory if it isn't already there</b>
 
 <b>5. Download dorado</b>
 
