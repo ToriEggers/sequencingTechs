@@ -104,7 +104,11 @@ sbatch bamTOfastq.sh
 To check if your job is running, type `squeue --me`
 
 You should also get emails when your job starts and finishes.
-  
+
+<b>8. Clean Up</b>
+
+If your data is backed up (which it should be), delete the directory of pod5 files once you finish basecalling. Rarely do we go back and rebasecall the data.
+
 </details>
 
 <details>
