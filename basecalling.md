@@ -12,7 +12,7 @@ Input is nanopore pod5 files. Output is basecalled fastq files.
 
 <b>1. open your terminal</b>
 
-<b>2. login to [username]@hpclogin.fiu.edu</b>
+<b>2. ssh [username]@hpclogin.fiu.edu</b>
 
 <b>3. cd to your working directory</b>
 
